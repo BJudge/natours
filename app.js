@@ -88,7 +88,7 @@ app.use(
           'https://*.cloudflare.com/',
           'https://bundle.js:*',
           'wss://travel-site-app.herokuapp.com:62462/',
-          'https://127.0.0.1:3000/*',
+          ' https://127.0.0.1:3000/api/v1/users/login',
           'ws://127.0.0.1:*/',
         ],
         upgradeInsecureRequests: [],
