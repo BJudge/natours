@@ -71,6 +71,7 @@ app.use(
           'wss:',
           'https://travel-site-app.herokuapp.com:*',
           'https://travel-site-app.herokuapp.com/',
+          'http://127.0.0.1:3000/api/v1/booking/checkout-session/*',
         ],
         baseUri: ["'self'"],
         fontSrc: ["'self'", 'https:', 'data:'],
