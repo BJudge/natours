@@ -4759,7 +4759,7 @@ const stripe = Stripe("pk_test_51JmCppEIEYpYpih2YSLlMuIAaC1zwc8GbqJRE2yIteCNkGZh
 const bookTour = async tourId => {
   try {
     // get session from server
-    const session = await (0, _axios.default)("http://127.0.0.1:3000/api/v1/booking/checkout-session/".concat(tourId));
+    const session = await (0, _axios.default)("/api/v1/booking/checkout-session/".concat(tourId));
     console.log(session); // create checkout form + process credit charge payment
 
     await stripe.redirectToCheckout({
@@ -4926,7 +4926,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51811" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65170" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

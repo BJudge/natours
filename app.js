@@ -88,7 +88,7 @@ app.use(
           'https://events.mapbox.com',
           'https://m.stripe.network',
         ],
-        childSrc: ["'self'", 'blob:', 'wss', 'ws'],
+        childSrc: ["'self'", 'blob:', 'wss:', 'ws:'],
         imgSrc: ["'self'", 'data:', 'blob:'],
         formAction: ["'self'"],
         connectSrc: [
