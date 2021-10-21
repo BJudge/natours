@@ -43,7 +43,7 @@ process.on('unhandledRejection', (err) => {
 });
 
 process.on('SIGTERM', () => {
-  console.log('SITERM RECIEVED. shutting down gracefully');
+  console.log('SIGTERM RECIEVED. shutting down gracefully');
   server.close(() => {
     console.log('Process Teminated');
   });
