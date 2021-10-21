@@ -61,6 +61,7 @@ app.use(
           'https://js.stripe.com/v3/',
           'https://m.stripe.network',
           'https://*.cloudflare.com',
+          'https://travel-site-app.herokuapp.com/',
         ],
         frameSrc: ["'self'", 'https://js.stripe.com/v3/'],
         objectSrc: ["'none'"],
