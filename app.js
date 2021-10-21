@@ -62,7 +62,15 @@ app.use(
   helmet({
     contentSecurityPolicy: {
       directives: {
-        defaultSrc: ["'self'", 'data:', 'blob:', 'https:', 'ws:', 'wss:'],
+        defaultSrc: [
+          "'self'",
+          'data:',
+          'blob:',
+          'https:',
+          'ws:',
+          'wss:',
+          'https://travel-site-app.herokuapp.com/*',
+        ],
         baseUri: ["'self'"],
         fontSrc: ["'self'", 'https:', 'data:'],
         scriptSrc: [
