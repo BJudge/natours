@@ -67,6 +67,7 @@ app.use(
         fontSrc: ["'self'", 'https:', 'data:'],
         scriptSrc: [
           "'self'",
+          'wss:',
           'https:',
           'http:',
           'blob:',
@@ -103,6 +104,7 @@ app.use(
           'https://*.cloudflare.com/',
           'https://bundle.js:*',
           'wss://travel-site-app.herokuapp.com:*',
+          'wss://travel-site-app.herokuapp.com:53552/',
           'https://127.0.0.1:3000/api/v1/users/login',
           'http://127.0.0.1:3000/api/v1/users/login',
           'ws://127.0.0.1:*',
