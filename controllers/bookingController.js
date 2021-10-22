@@ -67,12 +67,13 @@ exports.webhookCheckout = (req, res, next) => {
   } catch (err) {
     return res.status(400).send(`Webhook Error: ${err.message}`);
   }
-  if (event.type === 'checkout.session.completed') {
+  if (event.type === 'payment_intent.succeeded') {
     createBookingCheckout(event.data.object);
     res.status(200).json({ recieved: true });
   }
 };
 
+//checkout.session.completed
 exports.createBooking = factory.createOne(Booking);
 exports.getBooking = factory.getOne(Booking);
 exports.getAllBooking = factory.getAll(Booking);
