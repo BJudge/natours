@@ -18,8 +18,11 @@ const globalErrorHandler = require('./controllers/errorController');
 const tourRouter = require(`./routes/tourRoutes`);
 const userRouter = require(`./routes/userRoutes`);
 const reviewRouter = require(`./routes/reviewRoutes`);
+
 const bookingRouter = require(`./routes/bookingRoutes`);
+
 const bookingController = require('./controllers/bookingController');
+
 const viewRouter = require(`./routes/viewRoutes`);
 
 const app = express();
